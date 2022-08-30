@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face {
+    font-family:"cloister";
+    src: url(cloister_black/CloisterBlack.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    color: white;
+}
+
+:root{
+    --color-bg1: rgb(48, 48, 48);
+    --color-hover: rgb(255, 196, 0);
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Silkscreen', cursive;
+}
+
+
+h1{
+    font-family: "cloister";
+    font-size: 100px;
+    font-weight: 200;
+}
+
+/* NAV */     
+nav{
+    font-family: 'Silkscreen', cursive;
+    background: transparent;
+    background-color: rgb(44, 43, 43);
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+}
+
+.nav-container{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-container a :hover{
+    filter: brightness(1%);
+}
+
+.nav-menu{
+    list-style-type: none;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.nav-menu li :hover{
+    color: var(--color-hover)
+}
+
+.nav-menu a{    
+    text-decoration: none;
+}
+
+/* HEADER */
+header{
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5)url(media/4k-anime-wallpaper-whatspaper-1.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header-container{
+    text-align: center;
+    padding: 40vh 0;
+}
+
+        /* MAIN */
+main{
+    background: var(--color-bg1);
+    height: 300vh;
+}
