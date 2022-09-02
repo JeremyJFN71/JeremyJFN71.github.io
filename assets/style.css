@@ -39,7 +39,6 @@ body{
 }
 
 
-
 /* NAV */     
 nav{
     font-family: 'Silkscreen', cursive;
@@ -76,6 +75,7 @@ nav{
     text-decoration: none;
 }
 
+
 /* HEADER */
 header{
     height: 100vh;
@@ -91,12 +91,18 @@ header{
     padding: 40vh 0;
 }
 
+
         /* MAIN */
-main{
-    /* background: var(--color-bg1); */
-    height: 300vh;
+.content{
+    margin: 50px 150px;
 }
 
 section{
-    margin: 100px 50px;
+    padding-top: 5rem;
+}
+
+section > h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
