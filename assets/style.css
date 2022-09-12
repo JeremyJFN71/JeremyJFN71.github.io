@@ -4,6 +4,7 @@
     font-family:"cloister";
     src: url(fonts/CloisterBlack.ttf);
 }
+
 @font-face {
     font-family: "death-note";
     src: url(fonts/Death_Note_Font_by_Karlibell22.ttf);
@@ -57,7 +58,7 @@ nav{
 }
 
 .nav-container a :hover{
-    filter: brightness(1%);
+    filter: opacity(30%)
 }
 
 .nav-menu{
