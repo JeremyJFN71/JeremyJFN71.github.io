@@ -1,14 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Silkscreen&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @font-face {
-    font-family:"cloister";
-    src: url(fonts/CloisterBlack.ttf);
-}
-
-@font-face {
-    font-family: "death-note";
-    src: url(fonts/Death_Note_Font_by_Karlibell22.ttf);
-}
+    font-family: 'ArchRival';
+    src: url('./fonts/SF_Arch_Rival.ttf');
+  }
 
 *{
     margin: 0;
@@ -16,6 +9,7 @@
     border: 0;
     outline: 0;
     color: white;
+    font-family: 'ArchRival';
 }
 
 :root{
@@ -24,7 +18,6 @@
 }
 
 h1{
-    font-family: "death-note";
     font-size: 100px;
     font-weight: 200;
 }
@@ -35,14 +28,12 @@ p{
 
 body{
     background: var(--color-bg1);
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Silkscreen', cursive;
 }
 
 
 /* NAV */     
 nav{
-    font-family: 'Silkscreen', cursive;
+    font-size: 20px;
     background: transparent;
     background-color: rgb(44, 43, 43);
     width: 100vw;
@@ -95,7 +86,7 @@ header{
 
         /* MAIN */
 .content{
-    margin: 50px 150px;
+    padding: 0px 150px;
 }
 
 section{
@@ -107,3 +98,9 @@ section > h2 {
     text-align: center;
     margin-bottom: 2rem;
 }
+
+@media (max-width: 1080px) {
+    .content{
+        padding: 0px 50px;
+    }
+  }
