@@ -3,18 +3,21 @@
     src: url('./fonts/SF_Arch_Rival.ttf');
   }
 
+:root{
+    --color-bg: rgb(48, 48, 48);
+    --color-bg-nav: rgb(41, 40, 40);
+    --color-aqua: rgb(0,213,255);
+    --font-1: 'ArchRival';
+    --font-2: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
     color: white;
-    font-family: 'ArchRival';
-}
-
-:root{
-    --color-bg1: rgb(48, 48, 48);
-    --color-hover: rgb(255, 196, 0);
+    font-family: var(--font-1);
 }
 
 h1{
@@ -24,51 +27,55 @@ h1{
 
 p{
     text-align: justify;
+    font-size: 17px;
+    font-family: var(--font-2);
 }
 
 body{
-    background: var(--color-bg1);
+    background: var(--color-bg);
 }
 
 
-/* NAV */     
+        /* NAVBAR */     
 nav{
     font-size: 20px;
     background: transparent;
-    background-color: rgb(44, 43, 43);
+    background-color: var(--color-bg-nav);
     width: 100vw;
-    height: 5rem;
     position: fixed;
+    border-bottom: 5px solid var(--color-aqua);
 }
 
 .nav-container{
     height: 100%;
     display: flex;
+    /* margin: 0 150px; */
     justify-content: space-around;
     align-items: center;
 }
 
-.nav-container a :hover{
+.nav-container>a :hover{
     filter: opacity(30%)
 }
 
 .nav-menu{
     list-style-type: none;
     display: flex;
-    gap: 4rem;
     align-items: center;
-}
-
-.nav-menu li :hover{
-    color: var(--color-hover)
 }
 
 .nav-menu a{    
     text-decoration: none;
+    display: block;
+    padding: 25px 25px;
+}
+
+.nav-menu li :hover{
+    background-color: var(--color-aqua)
 }
 
 
-/* HEADER */
+        /* HEADER */
 header{
     height: 100vh;
     background: rgba(0, 0, 0, 0.5)url(media/1080p-anime-wallpaper-whatspaper-1.jpg);
@@ -83,24 +90,110 @@ header{
     padding: 40vh 0;
 }
 
+.header-container > h2{
+    color: var(--color-aqua);
+}
+
 
         /* MAIN */
 .content{
-    padding: 0px 150px;
+    margin: 0 300px 100px;
 }
 
 section{
-    padding-top: 5rem;
+    padding-top: 150px;
 }
 
-section > h2 {
+section > h2{
     font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
 }
 
-@media (max-width: 1080px) {
+.project-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: rgb(31, 31, 31);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.card h3{
+    text-align: center;
+    font-weight: 500;
+    margin: 5px;
+    font-family: var(--font-2);
+}
+
+.card p{
+    text-align: justify;
+    margin-bottom: 15px;
+    font-family: var(--font-2);
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+        /* FOOTER */
+footer{
+    height: 160px;
+    background-color: var(--color-bg-nav);
+    border-top: 5px solid var(--color-aqua);
+}
+
+.footer-container{
+    margin: 0 50px;
+    height: 80%;
+    display: flex;
+    align-items: flex-end;
+    font-size: 25px;
+}
+
+.footer-container a{
+    margin: 0 5px 10px;
+}
+
+.footer-created{
+    background-color: rgb(31, 31, 31);
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-created p {
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+@media (max-width: 1024px){
     .content{
-        padding: 0px 50px;
+        margin: 0px 50px 100px;
     }
-  }
+}
+
+@media (max-width: 480px){
+    .content{
+        margin: 0px 20px 100px;
+    }
+}
