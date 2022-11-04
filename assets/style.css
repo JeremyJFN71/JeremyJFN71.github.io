@@ -44,13 +44,15 @@ nav{
     width: 100vw;
     position: fixed;
     border-bottom: 5px solid var(--color-aqua);
+    z-index: 999;
 }
 
 .nav-container{
     height: 100%;
+    width: 75%;
+    margin: 0 auto;
     display: flex;
-    /* margin: 0 150px; */
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -71,7 +73,8 @@ nav{
 }
 
 .nav-menu li :hover{
-    background-color: var(--color-aqua)
+    background-color: var(--color-aqua);
+    color: black;
 }
 
 
@@ -97,7 +100,7 @@ header{
 
         /* MAIN */
 .content{
-    margin: 0 300px 100px;
+    margin: 0 200px 100px;
 }
 
 section{
@@ -119,9 +122,21 @@ section > h2{
 
 .card{
     background-color: rgb(31, 31, 31);
+    /* background-color: black ; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
     max-width: 300px;
-    margin: 0 auto;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 10px;
+    transform: scale(1);
+    transition: all 0.5s;
+    
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
 }
 
 .card h3{
@@ -138,6 +153,7 @@ section > h2{
 }
 
 .card button {
+    border-radius: 50px;
     border: none;
     outline: 0;
     padding: 12px;
@@ -150,7 +166,9 @@ section > h2{
 }
 
 .card button:hover {
-    opacity: 0.7;
+    background-color: var(--color-aqua);
+    /* opacity: 0.7; */
+    color: black;
 }
 
         /* FOOTER */
@@ -164,12 +182,17 @@ footer{
     margin: 0 50px;
     height: 80%;
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     font-size: 25px;
 }
 
 .footer-container a{
     margin: 0 5px 10px;
+}
+
+.footer-container a :hover {
+    color: var(--color-aqua);
 }
 
 .footer-created{
