@@ -27,7 +27,7 @@ h1{
 
 p{
     text-align: justify;
-    font-size: 17px;
+    font-size: 20px;
     font-family: var(--font-2);
 }
 
@@ -100,17 +100,24 @@ header{
 
         /* MAIN */
 .content{
-    margin: 0 200px 100px;
+    margin: 0 200px;
 }
 
 section{
-    padding-top: 150px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-section > h2{
+section h2{
     font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
+}
+
+#about{
+    margin: 0 100px;
 }
 
 .project-container{
@@ -122,15 +129,14 @@ section > h2{
 
 .card{
     background-color: rgb(31, 31, 31);
-    /* background-color: black ; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     max-width: 300px;
-    margin: 10px auto;
+    margin: 10px 10px;
     border-radius: 10px;
     padding: 10px;
     transform: scale(1);
-    transition: all 0.5s;
+    transition: all 0.3s;
     
 }
 
@@ -147,6 +153,7 @@ section > h2{
 }
 
 .card p{
+    font-size: 15px;
     text-align: justify;
     margin-bottom: 15px;
     font-family: var(--font-2);
@@ -167,7 +174,6 @@ section > h2{
 
 .card button:hover {
     background-color: var(--color-aqua);
-    /* opacity: 0.7; */
     color: black;
 }
 
