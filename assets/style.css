@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'ArchRival';
     src: url('./fonts/SF_Arch_Rival.ttf');
-  }
+}
 
 :root{
     --color-bg: rgb(48, 48, 48);
@@ -29,10 +29,6 @@ p{
     text-align: justify;
     font-size: 20px;
     font-family: var(--font-2);
-}
-
-body{
-    background: var(--color-bg);
 }
 
 
@@ -76,6 +72,7 @@ nav{
     background-color: var(--color-aqua);
     color: black;
 }
+        /* END OF NAVBAR */
 
 
         /* HEADER */
@@ -96,11 +93,16 @@ header{
 .header-container > h2{
     color: var(--color-aqua);
 }
+        /* END OF HEADER */
 
 
         /* MAIN */
-.content{
-    margin: 0 200px;
+.bg1{
+    background-color: var(--color-bg);
+}
+
+.bg2{
+    background-color: var(--color-bg-nav);
 }
 
 section{
@@ -116,32 +118,41 @@ section h2{
     margin-bottom: 2rem;
 }
 
-#about{
-    margin: 0 100px;
+.section-container{
+    margin: 0 200px;
 }
 
-.project-container{
+/* Project Section */
+.card-container{
     display: flex;
+    margin: 0 -5px;
+    box-sizing: border-box;
     justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+}
+
+.card-container :after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column{
+    float: left;
+    width: 25%;
+    padding: 0 10px;
 }
 
 .card{
-    background-color: rgb(31, 31, 31);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-    max-width: 300px;
-    margin: 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 213, 255);
     border-radius: 10px;
-    padding: 10px;
+    padding: 16px;
+    text-align: center;
     transform: scale(1);
     transition: all 0.3s;
-    
 }
 
 .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all 0.3s;
 }
 
@@ -159,7 +170,7 @@ section h2{
     font-family: var(--font-2);
 }
 
-.card button {
+.card button{
     border-radius: 50px;
     border: none;
     outline: 0;
@@ -176,6 +187,9 @@ section h2{
     background-color: var(--color-aqua);
     color: black;
 }
+/* End of Project Section */
+        /* END OF MAIN */
+
 
         /* FOOTER */
 footer{
@@ -209,20 +223,39 @@ footer{
     align-items: center;
 }
 
-.footer-created p {
+.footer-created p{
     font-size: 14px;
     font-family: 'Courier New', Courier, monospace;
 }
+        /* END OF FOOTER */
 
 
+/* Tablet */
 @media (max-width: 1024px){
-    .content{
-        margin: 0px 50px 100px;
+    .section-container{
+        margin: 0px 50px;
     }
 }
 
-@media (max-width: 480px){
-    .content{
-        margin: 0px 20px 100px;
+
+/* Mobile */
+@media (max-width: 600px){
+    .section-container{
+        margin: 0px 20px;
+    }
+    
+    section#project{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .column{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    .card-container{
+        display: block;
     }
 }
