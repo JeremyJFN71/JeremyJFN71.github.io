@@ -134,9 +134,9 @@ section > h2{
     
 }
 
-.card:hover {
+.card:hover{
     transform: scale(1.1);
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 .card h3{

@@ -23,7 +23,7 @@
       </ul>
     </div>
   </nav>
-  
+
   <header id="home">
     <div class="header-container">
       <h1>Ahmad Muhajir</h1>
@@ -36,13 +36,13 @@
       <section id="about">
         <h2>About</h2>
         <p>
-          Halo, nama saya Ahmad Muhajir Syamlan. Sekarang saya berumur 17 tahun dan saat ini saya bersekolah di SMK Negeri 69
-          Jakarta di jurusan Sistem Informatika Jaringan dan Aplikasi (SIJA). Alasan saya masuk jurusan SIJA adalah karena
-          saya tertarik terhadap teknologi informasi saat ini dan ingin mempelajarinya. Saat ini saya sedang mempelajari
-          bahasa pemrograman Python.
+          Halo, nama saya Ahmad Muhajir Syamlan. Sekarang saya berumur 17 tahun dan saat ini saya bersekolah di SMK
+          Negeri 69 Jakarta di jurusan Sistem Informatika Jaringan dan Aplikasi (SIJA). Alasan saya masuk jurusan SIJA
+          adalah karena saya tertarik terhadap teknologi informasi saat ini dan ingin mempelajarinya. Saat ini saya
+          sedang mempelajari bahasa pemrograman Python.
         </p>
       </section>
-      
+
       <section id="project">
         <h2>Project</h2>
         <div class="project-container">
@@ -63,7 +63,7 @@
               <a href="#"><button>View</button></a>
             </div>
           </div>
-          
+
           <div class="card">
             <img src="assets/media/code.png" alt="project alarm" style="width:100%">
             <div class="container">
@@ -74,7 +74,7 @@
           </div>
         </div>
       </section>
-      
+    
       <section id="contact">
         <h2>Contact</h2>
         <p>
@@ -107,23 +107,33 @@
     </div>
   </footer>
   <script>
-    document.onkeydown = function(e) {
-      if(event.keyCode == 123) {
+    document.onkeydown = function (e) {
+      if (event.keyCode == 123) {
         return false;
       }
-      if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
         return false;
       }
-      if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
         return false;
       }
-      if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
         return false;
       }
-      if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+      if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
         return false;
       }
     }
+    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
   </script>
 </body>
 
