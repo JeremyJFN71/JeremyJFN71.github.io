@@ -247,13 +247,8 @@ footer{
     .section-container{
         margin: 0px 20px;
     }
-    
-    section#project{
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
 
-    .column{
+    /* .column{
         width: 100%;
         display: block;
         margin-bottom: 20px;
@@ -261,5 +256,5 @@ footer{
     
     .card-container{
         display: block;
-    }
+    } */
 }
