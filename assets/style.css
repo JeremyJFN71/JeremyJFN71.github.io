@@ -170,6 +170,10 @@ section h2{
     font-family: var(--font-2);
 }
 
+.card img{
+    border-radius: 5px;
+}
+
 .card button{
     border-radius: 50px;
     border: none;
