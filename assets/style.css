@@ -72,14 +72,20 @@ nav{
     background-color: var(--color-aqua);
     color: black;
 }
+
+.active{
+    background-color: var(--color-aqua);
+    color: black;
+}
         /* END OF NAVBAR */
 
 
         /* HEADER */
 header{
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5)url(media/1080p-anime-wallpaper-whatspaper-1.jpg);
+    background: rgba(0, 0, 0, 0.5)url(img/1080p-anime-wallpaper-whatspaper-1.jpg);
     background-size: cover;
+    background-position: center;
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-attachment: fixed;

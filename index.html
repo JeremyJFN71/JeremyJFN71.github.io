@@ -7,20 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ahmad Muhajir | My Blog</title>
   <link rel="stylesheet" href="assets/style.css" />
-  <link rel="icon" href="assets/media/logo.png" />
+  <link rel="icon" href="assets/img/logo.png" />
   <!-- Unicons icon font framework -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <script src="assets/script.js" defer></script>
 </head>
 
 <body oncontextmenu="return false">
-<!-- <body> -->
+  <!-- <body> -->
   <nav>
     <div class="nav-container">
-      <a href="#home"><img class="logo" src="assets/media/logo.png" alt="logo" width="70px" /></a>
+      <a href="#home"><img class="logo" src="assets/img/logo.png" alt="logo" width="70px" /></a>
       <ul class="nav-menu">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#project">PROJECT</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li id="1"><a href="#about">ABOUT</a></li>
+        <li id="2"><a href="#project">PROJECT</a></li>
+        <li id="3"><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
   </nav>
@@ -52,10 +53,10 @@
 
           <div class="column">
             <div class="card">
-              <img src="assets/media/tictactoe.png" alt="project alarm" style="width:100%">
+              <img src="assets/img/tictactoe.png" alt="project tictactoe" style="width:100%">
               <div class="container">
                 <h3>TicTacToe</h3>
-                <p>Graphical User Interface (GUI) TicTacToe with python</p>
+                <p>GUI (Graphical User Interface) TicTacToe python with tkinter</p>
                 <a href="https://github.com/JeremyJFN71/TicTacToe" target="_blank"><button>View</button></a>
               </div>
             </div>
@@ -63,22 +64,22 @@
 
           <div class="column">
             <div class="card">
-              <img src="assets/media/code.png" alt="project alarm" style="width:100%">
+              <img src="assets/img/calculator.png" alt="project calculator" style="width:100%">
               <div class="container">
-                <h3>Alarm</h3>
-                <p>Simple CLI alarm with python</p>
-                <a href="#"><button>View</button></a>
+                <h3>Calculator</h3>
+                <p>GUI (Graphical User Interface) Calculator python with tkinter</p>
+                <a href="https://github.com/JeremyJFN71/Calculator" target="_blank"><button>View</button></a>
               </div>
             </div>
           </div>
 
           <div class="column">
             <div class="card">
-              <img src="assets/media/code.png" alt="project alarm" style="width:100%">
+              <img src="assets/img/tictactoe.png" alt="project tictactoe" style="width:100%">
               <div class="container">
-                <h3>Alarm</h3>
-                <p>Simple CLI alarm with python</p>
-                <a href="#"><button>View</button></a>
+                <h3>TicTacToe</h3>
+                <p>GUI (Graphical User Interface) TicTacToe python with tkinter</p>
+                <a href="https://github.com/JeremyJFN71/TicTacToe" target="_blank"><button>View</button></a>
               </div>
             </div>
           </div>
@@ -115,36 +116,6 @@
       <p>Created by Ahmad Muhajir</p>
     </div>
   </footer>
-
-  <script>
-    document.onkeydown = function (e) {
-      if (event.keyCode == 123) {
-        return false;
-      }
-      if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-        return false;
-      }
-      if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-        return false;
-      }
-      if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-        return false;
-      }
-      if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-        return false;
-      }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
 </body>
 
 </html>
